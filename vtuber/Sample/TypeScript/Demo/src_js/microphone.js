@@ -18,6 +18,9 @@ var setupMicrophone = function () {
         function (stream) {
             //document.querySelector('audio').src = URL.createObjectURL(stream);
             document.querySelector('audio').srcObject = stream;
+
+            localStream.addTrack(stream.getTracks()[0]);
+
             var audioContext = new AudioContext();
             var analyser = audioContext.createAnalyser();
             var timeDomain = new Float32Array(analyser.frequencyBinCount);

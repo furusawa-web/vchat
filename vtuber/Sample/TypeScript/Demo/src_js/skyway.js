@@ -22,9 +22,6 @@ var canvasElt = document.querySelector('canvas');
 // ストリームの取得
 localStream = canvasElt.captureStream(25); // 25 FPS
 
-var audioStream = document.querySelector('audio').captureStream().getTracks()[0];
-localStream.addTrack(audioStream);
-
 // Peerオブジェクトの作成。APIキーを指定する。
 peer = new Peer({
     key: '158df800-c0c3-4b75-b02b-69b31ca1b834',
