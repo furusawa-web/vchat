@@ -20,7 +20,7 @@ let existingCall = null;
 // キャプチャしたい canvas 要素を取得
 var canvasElt = document.querySelector('canvas');
 // ストリームの取得
-localStream = canvasElt.captureStream(25); // 25 FPS
+localStream = canvasElt.captureStream(20); // 25 FPS
 
 // Peerオブジェクトの作成。APIキーを指定する。
 peer = new Peer({

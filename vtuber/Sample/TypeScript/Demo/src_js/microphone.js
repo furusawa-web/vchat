@@ -38,8 +38,8 @@ var setupMicrophone = function () {
                 }
                 score = score / frequency.length;
 
-                if (score > 15) {
-                    var ripSyncValueTmp = score / 30 * ((Math.random() + 0.5));
+                if (score > 10) {
+                    var ripSyncValueTmp = score * (Math.random() + 0.5) / 30;
                     if (ripSyncValueTmp > 1) ripSyncValueTmp = 1;
                     if (ripSyncValue > ripSyncValueTmp) ripSyncValueTmp *= 0.8;
                     ripSyncValue = ripSyncValueTmp;
