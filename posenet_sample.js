@@ -22,7 +22,7 @@ const winWidth = 1920;
 
 let naviko = new Image();
 let navScale = 1
-naviko.src = "https://github.com/furusawa-web/furusawa-web.github.io/blob/master/naviko.png"
+naviko.src = "naviko.png"
 bindPage();
 
 async function bindPage() {
